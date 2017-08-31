@@ -57,26 +57,23 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Window" id="aUF-d1-5bR">
+                            <menuItem title="Edit" id="Ob3-AZ-7bx">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
+                                <menu key="submenu" title="Edit" id="tjR-Rz-s4c">
                                     <items>
-                                        <menuItem title="Minimize" keyEquivalent="m" id="OY7-WF-poV">
+                                        <menuItem title="Copy" keyEquivalent="c" id="c0l-Lq-Art">
                                             <connections>
-                                                <action selector="performMiniaturize:" target="Ady-hI-5gd" id="VwT-WD-YPe"/>
+                                                <action selector="copy:" target="Voe-Tx-rLC" id="gz3-BJ-kiA"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Zoom" id="R4o-n2-Eq4">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        <menuItem title="Paste" keyEquivalent="p" id="YIg-Nc-TAA">
                                             <connections>
-                                                <action selector="performZoom:" target="Ady-hI-5gd" id="DIl-cC-cCs"/>
+                                                <action selector="paste:" target="Voe-Tx-rLC" id="HX1-eW-c92"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
-                                        <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        <menuItem title="Select All" keyEquivalent="a" id="p5d-g4-Svl">
                                             <connections>
-                                                <action selector="arrangeInFront:" target="Ady-hI-5gd" id="DRN-fu-gQh"/>
+                                                <action selector="selectAll:" target="Voe-Tx-rLC" id="AKD-6I-9MF"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -100,10 +97,14 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MathJaxEditor" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MathJaxEditor" customModuleProvider="target">
+                    <connections>
+                        <outlet property="selectAll" destination="tjR-Rz-s4c" id="9NX-qo-slO"/>
+                    </connections>
+                </customObject>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="38" y="-182"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -121,7 +122,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="156" y="208"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
