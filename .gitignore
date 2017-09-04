@@ -1,2 +1,5 @@
 # macOS cache file
 ._*
+
+# xcode debugger
+xcuserdata/

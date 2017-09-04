@@ -63,12 +63,12 @@
                                     <items>
                                         <menuItem title="Copy" keyEquivalent="c" id="c0l-Lq-Art">
                                             <connections>
-                                                <action selector="copy:" target="Voe-Tx-rLC" id="gz3-BJ-kiA"/>
+                                                <action selector="copy:" target="Voe-Tx-rLC" id="l8r-id-UJ2"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Paste" keyEquivalent="p" id="YIg-Nc-TAA">
+                                        <menuItem title="Paste" keyEquivalent="v" id="YIg-Nc-TAA">
                                             <connections>
-                                                <action selector="paste:" target="Voe-Tx-rLC" id="HX1-eW-c92"/>
+                                                <action selector="paste:" target="Voe-Tx-rLC" id="fJw-wg-q4G"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Select All" keyEquivalent="a" id="p5d-g4-Svl">
@@ -97,14 +97,14 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MathJaxEditor" customModuleProvider="target">
                     <connections>
                         <outlet property="selectAll" destination="tjR-Rz-s4c" id="9NX-qo-slO"/>
                     </connections>
                 </customObject>
-                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="38" y="-182"/>
+            <point key="canvasLocation" x="38" y="-146"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -148,7 +148,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="htmlEditorContainer" destination="jE8-aQ-Umb" id="2Mw-t9-B6d"/>
                         <outlet property="webviewEditor" destination="jE8-aQ-Umb" id="ouq-H5-n7t"/>
                     </connections>
                 </viewController>
