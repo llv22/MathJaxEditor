@@ -73,7 +73,7 @@
                                         </menuItem>
                                         <menuItem title="Select All" keyEquivalent="a" id="p5d-g4-Svl">
                                             <connections>
-                                                <action selector="selectAll:" target="Voe-Tx-rLC" id="AKD-6I-9MF"/>
+                                                <action selector="selectAll:" target="Voe-Tx-rLC" id="bBG-RZ-uDe"/>
                                             </connections>
                                         </menuItem>
                                     </items>
