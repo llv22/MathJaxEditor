@@ -14,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     // see https://stackoverflow.com/questions/42322146/how-to-paste-an-nsimage-correctly-from-nspasteboard
     @IBAction func copy(_ sender: Any) {
-        if let window = NSApplication.shared().mainWindow {
+        if let window = NSApplication.shared.mainWindow {
             // see https://stackoverflow.com/questions/25708649/downcasting-optionals-in-swift-as-type-or-as-type - downport type
             if let viewController = window.contentViewController as? ViewController {
                 viewController.copyWebContent()
@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @IBAction func paste(_ sender: Any) {
-        if let window = NSApplication.shared().mainWindow {
+        if let window = NSApplication.shared.mainWindow {
             if let viewController = window.contentViewController as? ViewController {
                 viewController.pasteWebContent()
             }
@@ -31,7 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @IBAction func selectAll(_ sender: Any) {
-        if let window = NSApplication.shared().mainWindow {
+        if let window = NSApplication.shared.mainWindow {
             if let viewController = window.contentViewController as? ViewController {
                 viewController.selectAllWebContent()
             }

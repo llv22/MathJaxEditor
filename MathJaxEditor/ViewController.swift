@@ -49,8 +49,8 @@ class ViewController: NSViewController {
             }
             htmlContent = self.removeSymbol(htmlContent)
             // see : copy to pasteboards https://stackoverflow.com/questions/24670290/how-to-copy-text-to-clipboard-pasteboard-with-swift
-            NSPasteboard.general().clearContents()
-            NSPasteboard.general().setString(htmlContent, forType: NSPasteboardTypeString)
+            NSPasteboard.general.clearContents()
+            NSPasteboard.general.setString(htmlContent, forType: NSPasteboard.PasteboardType.string)
         }
     }
     
@@ -66,7 +66,7 @@ class ViewController: NSViewController {
             }
             htmlContent = self.removeSymbol(htmlContent)
             // see : copy to pasteboards https://stackoverflow.com/questions/24670290/how-to-copy-text-to-clipboard-pasteboard-with-swift
-            let content = NSPasteboard.general().string(forType: NSPasteboardTypeString)!
+            let content = NSPasteboard.general.string(forType: NSPasteboard.PasteboardType.string)!
             let newValue = htmlContent + content
             let executedScript = "document.getElementById('MathInput').value='" + newValue + "'"
             self.webviewEditor.evaluateJavaScript(executedScript) { (html, error) in
