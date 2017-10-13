@@ -82,10 +82,14 @@ class ViewController: NSViewController {
                 return
             }
             if let tagContent = html as? String {
-                //see : save to snapshot, https://iswift.org/cookbook/get-current-directory-path
-                let fileURL = "\(FileManager.default.currentDirectoryPath)/snapshot.txt"
+                //see : save to snapshot, https://iswift.org/cookbook/get-current-directory-path`
+//                let fileURL = "\(FileManager.default.currentDirectoryPath)/mathjax-snapshot.txt"
+                //see : https://thatthinginswift.com/writing-documents-directory-swift/
+                let documentDirectory = try! FileManager.default.url(for: .downloadsDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+                let fileURL = documentDirectory.appendingPathComponent("mathjax-snapshot.txt")
                 do {
-                    try tagContent.write(to: URL(fileURLWithPath: fileURL), atomically: true, encoding: .utf8)
+//                    try tagContent.write(to: URL(fileURLWithPath: fileURL), atomically: true, encoding: .utf8)
+                    try tagContent.write(to: fileURL, atomically: true, encoding: .utf8)
                 } catch {
                     print("error writing to url:", fileURL, error)
                 }
