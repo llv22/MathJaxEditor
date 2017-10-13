@@ -38,6 +38,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
+    @IBAction internal func save(_ sender: Any) {
+        if let window = NSApplication.shared.mainWindow {
+            if let viewController = window.contentViewController as? ViewController {
+                viewController.saveWebContent()
+            }
+        }
+    }
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     }
