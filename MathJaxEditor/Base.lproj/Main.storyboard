@@ -63,22 +63,22 @@
                                     <items>
                                         <menuItem title="Copy" keyEquivalent="c" id="c0l-Lq-Art">
                                             <connections>
-                                                <action selector="copy:" target="Voe-Tx-rLC" id="l8r-id-UJ2"/>
+                                                <action selector="copy:" target="Voe-Tx-rLC" id="kIx-9k-PrD"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Paste" tag="1" keyEquivalent="v" id="YIg-Nc-TAA">
                                             <connections>
-                                                <action selector="paste:" target="Voe-Tx-rLC" id="fJw-wg-q4G"/>
+                                                <action selector="paste:" target="Voe-Tx-rLC" id="Zq3-sL-ztE"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Save" tag="2" keyEquivalent="s" id="JhV-KV-jGD">
                                             <connections>
-                                                <action selector="save:" target="Voe-Tx-rLC" id="Uqo-1T-d2u"/>
+                                                <action selector="save:" target="Voe-Tx-rLC" id="B30-iy-3Pt"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Select All" tag="3" keyEquivalent="a" id="p5d-g4-Svl">
                                             <connections>
-                                                <action selector="selectAll:" target="Voe-Tx-rLC" id="bBG-RZ-uDe"/>
+                                                <action selector="selectAll:" target="Voe-Tx-rLC" id="Fi7-Xp-z8Z"/>
                                             </connections>
                                         </menuItem>
                                     </items>
